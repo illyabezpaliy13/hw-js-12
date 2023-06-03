@@ -1,3 +1,7 @@
-// Напишіть скрипт який при кліку на кнопку буде виводити на екран повідомлення
-//  “Hello World!”. Використовуй колбек в вигляді стрілки.
+const button = document.querySelector('[data-button-4]');
 
+const message = function() {
+    alert('Hello World!');
+}
+
+ button.addEventListener('click', message);
